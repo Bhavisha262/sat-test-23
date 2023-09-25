@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(201, 42, 213);
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .img1{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .img2{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .img3{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    button{
+        width: 250px;
+        height: 50px;
+        padding: 10px 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: antiquewhite;
+        background-color: black;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px 20px;
+    }
+    .button{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+    #image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto auto;
+        padding: auto auto;
+    }
+</style>
+<body>
+    <h1> <i> Our Gods </i> </h1>
+    </br>
+    <div class="main">
+        <div class="button">
+        <button onclick='document.getElementById("image").src="./Images/radha krishna.jpg"'>Radha-Krishna</button>
+        <button onclick='document.getElementById("image").src="./Images/shiv.jpg"'>Shiv</button>
+        <button onclick='document.getElementById("image").src="./Images/ram.png"'>Ram</button>
+        </div>
+    </div>
+    </br>
+    <img id="image" src="./Images/radha krishna.jpg" width="400px" height="350px">
+</body>
+</html>
